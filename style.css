@@ -1,0 +1,130 @@
+:root{
+    --dio-purple: #6e2bff;
+    --dio-purple-light: #b79aff;
+    --dio-purple-dark: #3a0ca8;
+    --dio-black: #000;
+    --dio-white: #fff;
+    --dio-gray: #f5f5f5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121212;
+}
+
+p{
+  color: white;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/**/
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.btn-inscrever {
+  background-color: rgb(2, 98, 241);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.banner-content{
+padding-bottom: 20px; 
+}
+
+.btn-inscrever:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(12, 121, 211, 0.4);
+  
+}
+
+.modulus-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.modulo {
+  flex: 1 1 300px;
+  max-width: 350px;
+  color: white;
+  background: rgb(2, 98, 241);
+  border-radius: 10px ;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.modulo:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.transforme-mundo {
+  background-image: url('imagens/woman-code.png');
+  background-attachment: fixed;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.modulo h3::before {
+  content: "✓";
+  color: var(--dio-purple);
+  margin-right: 10px;
+}
+
+header {
+  background-image:url('imagens/banner.png');
+  box-shadow: 0px 0px 25px rgba(36, 105, 184, 0.767);
+  border-radius: 30px;
+  background-image: linear-gradient(to top, 
+  rgba(12, 12, 12, 0), 
+  rgba(36, 105, 184, 0.350) 50%, 
+  rgba(36, 105, 184, 0.350) 50%,         
+  rgba(12, 12, 12, 0)),
+  url('imagens/banner.png');
+}
+
+footer {
+  background: var(--dio-black);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .modulos-container {
+    flex-direction: column;
+  }
+}
+
+.logo{       /*Imagem Topo*/
+width: 230px;
+border-radius: 180px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.L-logo{      /*Imagem rodapé*/
+  width: 25%;
+}
